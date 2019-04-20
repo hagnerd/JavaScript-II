@@ -84,3 +84,4 @@ let arrayWithDuplicates = [1, 1, 2, 3, 4, 5, 4];
 removeDuplicates(arrayWithDuplicates, function(uniqueArray) {
   console.log(uniqueArray);
 });
+console.log(arrayWithDuplicates);
