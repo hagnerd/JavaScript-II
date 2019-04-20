@@ -7,6 +7,24 @@
 //  }
 // }
 const add = a => b => a + b;
+const subtract = a => b => a - b;
+const multiply = a => b => a * b;
+const divide = a => b => a / b;
+
+console.log(add(1)(2));
+console.log(subtract(10)(3));
+console.log(multiply(13)(20));
+console.log(divide(110)(11));
+
+let someGlobalState = "Hello, ";
+
+function sayHello(name) {
+  return function() {
+    console.log(`${someGlobalState}, ${name}`);
+  };
+}
+
+sayHello("World!");
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
